@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@media screen and  (max-width: 1120px){
+    .mv{
+        margin-bottom: 50px;
+    }
+
+    .scroll_text{
+        display: none;
+    }
+
+    .scroll_line{
+        height: 80px;
+    }
+
+    .catchCopy_titel{
+        font-size: 22px;
+    }
+
+    .item{
+        padding: 0 0 50px;
+    }
+
+    .navi_ja{
+        font-size: 18px;
+    }
+
+    .schedule{
+        padding-bottom: 30px;
+    }
+
+    .schedule_contents{
+        display: block;
+    }
+
+    .schedule_images{     
+        margin: 0 auto;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .schedule_images_1{
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .schedule_images_2{
+        display: none;       
+    }
+
+    .schedule_desc{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .schedule_emphasis{
+        max-width: 300px;
+        margin: 0 auto 20px;
+        font-size: 20px;
+    }
+
+    .schedule_time{
+        font-size: 18px;
+    }
+
+    .schedule_note{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .fare_contents{
+        display: block;
+        width: 90%;
+    }
+
+    .fare_desc{
+        text-align: center;
+    }
+
+    .fare_note{
+        width: 200px;
+        display: block;
+        margin: 0 auto 30px;
+    }
+
+    .fare_note_li{
+        font-size: 14px;
+    }
+
+    .button{
+        display: block;
+        width: 130px;
+        font-size: 14px;
+        margin: 0 auto;        
+    }
+
+    .ticket_image{
+        display: block;
+        width: 200px;
+        margin: 30px auto 0;
+    }
+
+    .tab_right{
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+
+    .tab_contents{
+        display: block;
+    }
+
+    .tab_image{
+        width: 230px;
+        height: 130px;
+        margin: 0 auto 10px;
+        display: block;
+    }
+
+
+    .tab_time{
+        text-align: center;
+        width: 200px;
+        /* margin-left: -80px; */
+        display: block;
+        margin: 0 auto;
+    }
+
+    .tram_image{
+        display: none;
+    }
+}

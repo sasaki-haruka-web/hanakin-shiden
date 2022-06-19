@@ -1,0 +1,389 @@
+@charset "UTF-8";
+
+/*
+ベースカラー #000 #1a1a1a
+メインカラー #D5AF2E
+アクセントカラー
+*/
+
+body{
+  font-family: "Noto Sans JP";
+  font-size: 18px;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+.inner{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.item{
+  padding: 50px 50px 0 50px;
+}
+
+.button{
+  position: relative;
+  text-decoration: none;
+  border: 1px solid #D5AF2E;
+  padding: 10px 50px 10px 30px;
+  color: #D5AF2E;
+  border-radius: 3px;
+  transition: all .5s ease;
+}
+
+.button::after{
+  position: absolute;
+  content: '';
+  top: 40%;
+  right: 12%;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #D5AF2E;
+  border-right: 2px solid #D5AF2E;
+  transform: rotate(45deg);
+}
+
+.button:hover{
+  color: #fff;
+  background-color: #D5AF2E;
+  transition: all .5s ease;
+}
+
+.button:hover:after{
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition: all .5s ease;
+}
+
+/* heroMvについて */
+
+.heroMv{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mv{
+  display: block;
+  width: 98%;
+  margin: 15px auto 0;
+}
+
+.logo{
+  position: relative;
+  width: 50%;
+  position: absolute;
+  top: 17%;
+  left: 27%;
+}
+
+.scroll_text{
+  position: absolute;
+  top: 71%;
+  left: 50%;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.scroll_text:hover{
+  opacity: .7;
+  transition: all .4s ease;
+}
+
+.scroll_line{
+  width: 3px;
+  height: 100px;
+  position: absolute;
+  top: 75%;
+  left: 53%;
+  background: #fff;
+}
+
+.scroll_line:hover{
+  height: 150px;
+  transition: all .4s ease;
+}
+
+
+/* catchCopyについて */
+
+.catchCopy{
+  background-image: url("../img/catchCopy_navi_bg.png");
+}
+
+.catchCopy_titel{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+
+.catchCopy_desc{
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* naviについて */
+
+.navi{
+  background-image: url("../img/catchCopy_navi_bg.png");
+  padding-bottom: 70px;
+}
+
+.navi_ul{
+  display: flex;
+  @adding-bottom: 80px;
+}
+
+.navi_li{
+  flex: 1 0 33%;
+  text-align: center;
+  border-left: 3px solid #fff;
+  position: relative;
+}
+
+.navi_li:last-child{
+  border-right: 3px solid #fff;
+}
+
+.navi_li::after{
+  content: '';
+  position: absolute;
+  top: 75%;
+  left: 48%;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(135deg);
+  transition: all .4s ease;
+}
+
+.navi_li:hover:after{
+  transition: all .4s ease;
+  top: 80%;
+}
+
+.navi_a{
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0 55px;
+}
+
+.navi_ja{
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+/* Schedule・Fare・Tram共通 */
+
+.title_en{
+  margin: 0 auto 40px;
+  width: 100px;
+  color: fff;
+  text-align: center;
+  padding: 10px 30px;
+  background-color: #D5AF2E;
+}
+
+.title_ja{
+  margin: 0 auto;
+  width: 250px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.title_ja::before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: 0;
+  width: 30px;
+  height: 56px;
+  background-image: url("../img/title_deco_left.png");
+  background-repeat: no-repeat;
+}
+
+.title_ja::after{
+  position: absolute;
+  content: '';
+  top: -10px;
+  right: 0;
+  width: 30px;
+  height: 56px;
+  background-image: url("../img/title_deco_right.png");
+  background-repeat: no-repeat;
+}
+
+.ticket_image{
+  width: 50%;
+}
+
+/* Scheduleについて */
+
+.schedule{
+  padding-bottom: 150px;
+  background-color: #1a1a1a;
+  /*   background-image: url("../img/schedule_bg.jpg"); */
+}
+
+.schedule_contents{
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule_images{
+  width: 50%;
+  position: relative;
+}
+
+.schedule_images_1{
+  width: 93%;
+}
+
+.schedule_images_2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 67%;
+}
+
+.schedule_desc{
+  margin: 30px 100px 0 0;
+}
+
+.schedule_emphasis{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #D5AF2E;
+  padding: 10px;
+}
+
+.schedule_time{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  padding-left: 13px;
+}
+
+.schedule_note{
+  letter-spacing: 5px;
+  padding-left: 13px;
+}
+
+/* Fareについて */
+
+.fare{
+  background-color: #1a1a1a;
+}
+
+.fare_contents{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fare_desc{
+  margin-top: 60px;
+}
+
+.fare_emphasis{
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.fare_note{
+  height: 30%;
+}
+
+.fare_note_li{
+  margin: 10px 0;
+  letter-spacing: 5px;
+}
+
+.fare_note_li::before{
+  content: '※';
+}
+
+/* tramについて */
+
+.tram{
+  background-color: #1a1a1a;
+  /*   background-image: url("../img/tram_bg.jpg"); */
+  padding-bottom: 130px;
+  /* margin-bottom: 200px; */
+}
+
+/* footerについて */
+
+.footer{
+  background-color: #fff;
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 12px;
+  padding: 20px 0 10px;
+}
+
+.official{
+  position: relative;
+  display: block;
+  width: 192px;
+  color: #1a1a1a;
+  text-decoration: none;
+  margin: 0 auto 30px;
+  font-weight: bold;
+}
+
+.official::before{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: -3px;
+  left: 0;
+  border-radius: 50%;
+  background-color: #D5AF2E;
+  transition: all .4s ease;
+}
+
+.official::after{
+  position: absolute;
+  content: '';
+  top: 25%;
+  left: 3.5%;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: all .4s ease;
+}
+
+.official:hover:after{
+  left: 4.5%;
+  transition: all .4s ease;
+}
+
+.contact{
+  line-height: 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+.tab5 {
+  width: 72%;/*横幅はここで設定します。100%にすれば可変になります。*/
+  min-width: 320px;
+  margin: 0 auto;
+}
+.tab5 .tab-content {
+  margin: 0 10px;
+}
+.tab5 label {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.tab5 label {
+  display: inline-block;
+  width: 78px;
+  padding: 3px 10px;
+  cursor: pointer;
+  background: #fff;
+  color: #181818;
+  margin-right: -2px;
+}
+.tab5 label:hover {
+  background: #eee;
+}
+.tab5 input:checked + label {
+  background: #D5AF2E;
+  color: white;
+  padding: 5px 10px 3px 10px;
+}
+.tab5 input {
+  display: none;
+}
+.tab5 #tab5-b1,
+.tab5 #tab5-b2,
+.tab5 #tab5-b3,
+.tab5 #tab5-b4,
+.tab5 #tab5-b5,
+.tab5 #tab5-b6,
+.tab5 #tab5-b7,
+.tab5 #tab5-b8 {
+  display: none;
+  padding: 10px;
+}
+.tab5 #tab5-1:checked ~ #tab5-b1,
+.tab5 #tab5-2:checked ~ #tab5-b2,
+.tab5 #tab5-3:checked ~ #tab5-b3,
+.tab5 #tab5-4:checked ~ #tab5-b4,
+.tab5 #tab5-5:checked ~ #tab5-b5,
+.tab5 #tab5-6:checked ~ #tab5-b6,
+.tab5 #tab5-7:checked ~ #tab5-b7,
+.tab5 #tab5-8:checked ~ #tab5-b8 {
+  display: block;
+  border-top: 5px solid #D5AF2E;
+  background-color: #fff;
+}
+
+.tab_contents{
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tab_right{
+  width: 36%;
+  height: 100%;
+}
+
+.tab_time{
+  line-height: 30px;
+  margin-top: 30px;
+  color:  #181818;
+}
+
+.tab_image{
+  width: 300px;
+  height: 200px;
+}
+
+.tram_image{
+  width: 140px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
